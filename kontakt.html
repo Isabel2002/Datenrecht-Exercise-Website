@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt - WorkFlowra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div style="max-width:1100px; margin:auto; padding:1.5rem;">
+    <h1>WorkFlowra</h1>
+    <p>Projektmanagement-Software für strukturierte Teamarbeit</p>
+  </div>
+</header>
+
+<nav class="site-nav" aria-label="Hauptnavigation">
+  <div style="max-width:1100px; margin:auto; padding:0.8rem 1.5rem;">
+    <ul>
+      <li>
+        <ul class="nav-left">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="produkt.html">Produkt</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <ul class="nav-right">
+          <li><a href="barrierefreiheit.html">Barrierefreiheit</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="kontakt.html" class="active" aria-current="page">Kontakt</a></li>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="lizenz.html">Lizenz</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section>
+    <h1>Kontakt</h1>
+
+    <p>
+    <b>WorkFlowra Solutions GmbH</b><br>
+    Musterstraße 12<br>
+    1010 Wien
+    </p>
+
+    <p>
+    +43 111 22334455 <br>
+    E-Mail: info@workflowra.com
+    </p>
+  </section>
+  <section>
+    <h2>Ihre Kontaktinformationen</h2>
+    <p>
+      Haben Sie Fragen zu WorkFlowra? Schreiben Sie uns gerne.
+    </p>
+
+    <form>
+        <div class="form-group">
+            <label for="gender">Geschlecht (optional)</label>
+            <select id="gender" name="gender">
+            <option value="">Bitte auswählen</option>
+            <option value="female">Weiblich</option>
+            <option value="male">Männlich</option>
+            <option value="diverse">Divers</option>
+            <option value="na">Keine Angabe</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="firstname">Vorname *</label>
+            <input id="firstname" name="firstname" type="text" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastname">Nachname *</label>
+            <input id="lastname" name="lastname" type="text" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-Mail-Adresse *</label>
+            <input id="email" name="email" type="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Land *</label>
+            <select id="country" name="country" required>
+            <option value="">Bitte auswählen</option>
+            <option value="AT">Österreich</option>
+            <option value="DE">Deutschland</option>
+            <option value="CH">Schweiz</option>
+            <option value="other">Sonstiges</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Nachricht *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Nachricht senden</button>
+    </form>
+
+    <p style="font-size:0.9rem;">
+      * Pflichtfelder
+    </p>
+
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 WorkFlowra Solutions GmbH</p>
+</footer>
+
+
+</body>
+</html>
